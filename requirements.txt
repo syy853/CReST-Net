@@ -1,0 +1,8 @@
+opencv-python
+scipy
+matplotlib
+tqdm
+fvcore
+timm
+prettytable
+einops
