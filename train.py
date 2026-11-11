@@ -22,13 +22,13 @@ from optimizer_utils import (
 )
 from util import generate_smoothed_gt
 
-from models.GCoNet import GCoNet
+from models.CReSTNet import CReSTNet
 
 
 # Parameter from command line
 parser = argparse.ArgumentParser(description='')
 parser.add_argument('--model',
-                    default='GCoNet',
+                    default='CReSTNet',
                     type=str,
                     help="Options: '', ''")
 parser.add_argument('--resume',
@@ -131,7 +131,7 @@ logger_loss_idx = 1
 # Init model
 device = torch.device("cuda")
 
-model = GCoNet().to(device)
+model = CReSTNet().to(device)
 
 # DINOv2 training contract:
 #   frozen foundation backbone;
