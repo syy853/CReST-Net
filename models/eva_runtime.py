@@ -10,8 +10,8 @@ class FrozenEVARuntime:
     External frozen EVA-02 encoder.
 
     This class is intentionally not an nn.Module. When stored inside
-    GCoNet through object.__setattr__, EVA parameters are excluded from
-    GCoNet.state_dict() and from the optimizer.
+    CReSTNet through object.__setattr__, EVA parameters are excluded from
+    CReSTNet.state_dict() and from the optimizer.
     """
 
     def __init__(
