@@ -17,9 +17,9 @@ from models.consensus_prompt_feedback import ConsensusGuidedPromptFeedback
 from config import Config
 
 
-class GCoNet(nn.Module):
+class CReSTNet(nn.Module):
     def __init__(self):
-        super(GCoNet, self).__init__()
+        super(CReSTNet, self).__init__()
         self.config = Config()
         bb = self.config.bb
         if bb == 'cnn-vgg16':
